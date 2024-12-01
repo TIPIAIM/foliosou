@@ -14,7 +14,7 @@ const About = () => {
         <div className=" mb-10">
           <br className=" mt-10"/>
           <h1 className="text-4xl mt-10 sm:text-5xl font-extrabold text-green-900 text-center">
-         À Propos de Moi
+         À Propos de Moi (Unpeu de detail)
           </h1>
         </div>
 
@@ -43,7 +43,7 @@ const About = () => {
               en gestion de bases de données et en création de solutions
               technologiques adaptées. Je suis toujours en quête de nouvelles
               opportunités pour appliquer mes connaissances et participer à des
-              projets ambitieux.
+              projets ambitieux .
             </p>
           </div>
         </div>

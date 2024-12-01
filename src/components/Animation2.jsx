@@ -48,11 +48,11 @@ export default function Animation2() {
       to: { opacity: 1, x: 0 },
     });
     animateElement("#box2", {
-      from: { opacity: 0, y: 800 },
+      from: { opacity: 0, y: 700 },
       to: { opacity: 1, y: 0 },
     });
     animateElement("#box3", {
-      from: { opacity: 0, y: -800 },
+      from: { opacity: 0, y: -700 },
       to: { opacity: 1, y: 0 },
     });
     animateElement("#box4", {
