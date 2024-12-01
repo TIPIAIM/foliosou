@@ -34,7 +34,7 @@ export default function Animation2() {
       scrollTrigger: {
         trigger: elem,
         start: "top 40%",
-        end: "bottom 20%",
+        end: "bottom 30%",
         toggleActions: "play none none reverse",
         ...triggerProps,
       },
@@ -44,11 +44,11 @@ export default function Animation2() {
   useEffect(() => {
     onLoad();
     animateElement("#box1", {
-      from: { opacity: 0, x: -700 },
+      from: { opacity: 0, x: -400 },
       to: { opacity: 1, x: 0 },
     });
     animateElement("#box2", {
-      from: { opacity: 0, y: 400 },
+      from: { opacity: 0, y: -400 },
       to: { opacity: 1, y: 0 },
     });
     animateElement("#box3", {
@@ -76,7 +76,7 @@ export default function Animation2() {
       <div className="flex flex-wrap justify-center gap-3">
         <div
           id="box1"
-          className="w-60 h-100 bg-blue-500 text-white flex items-center justify-center rounded-lg shadow-lg hover:scale-105 transition-transform duration-400"
+          className="w-60 h-100 bg-blue-500 text-white flex items-center justify-center rounded-lg shadow-lg hover:scale-105 transition-transform duration-600"
         >
           <img
             src={NOUSSOUM}
@@ -86,7 +86,7 @@ export default function Animation2() {
         </div>
         <div
           id="box2"
-          className="w-60 h-100 bg-green-500 text-white flex items-center justify-center rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+          className="w-60 h-100 bg-green-500 text-white flex items-center justify-center rounded-lg shadow-lg hover:scale-105 transition-transform duration-600"
         >
           <img
             src={concourimage}
@@ -110,7 +110,6 @@ export default function Animation2() {
         >
           <img
             src={NOUSSOUM}
-            id="box1"
             alt="Profil"
             className="image-box relative w-60 h-80 overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
           />
