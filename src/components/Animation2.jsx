@@ -48,15 +48,15 @@ export default function Animation2() {
       to: { opacity: 1, x: 0 },
     });
     animateElement("#box2", {
-      from: { opacity: 0, y: 700 },
+      from: { opacity: 0, y: 400 },
       to: { opacity: 1, y: 0 },
     });
     animateElement("#box3", {
-      from: { opacity: 0, y: -700 },
+      from: { opacity: 0, y: -400 },
       to: { opacity: 1, y: 0 },
     });
     animateElement("#box4", {
-      from: { opacity: 0, x: 700 },
+      from: { opacity: 0, x: 400 },
       to: { opacity: 1, x: 0 },
     });
   }, []);

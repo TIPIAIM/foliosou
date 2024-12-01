@@ -14,7 +14,7 @@ const About = () => {
         <div className=" mb-10">
           <br className=" mt-10"/>
           <h1 className="text-4xl mt-10 sm:text-5xl font-extrabold text-green-900 text-center">
-         À Propos de Moi (Unpeu de detail)
+         À Propos de Moi (Unpeu)
           </h1>
         </div>
 
@@ -56,7 +56,7 @@ const About = () => {
             duration={500}
             className="bg-gradient-to-r p-6 from-blue-900 via-green-500  flex items-center px-8 py-3  to-black text-white text-lg font-semibold rounded-md shadow-lg hover:scale-105 transition-transform duration-300 cursor-pointer"
           >
-            Retour à l'accueil
+            Retour
             <FcLeft
               size={25}
               className=" bg-gradient-to-r from-white via-green-500 to-green-900 text-white ml-2 transform hover:rotate-90 transition-transform duration-300"
