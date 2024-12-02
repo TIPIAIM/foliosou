@@ -53,7 +53,7 @@ export default function Contact() {
       <div className='flex justify-center items-center max-w-screen-lg mx-auto h-full'>
         {/* Image à gauche */}
         <div className="hidden md:block w-1/2 p-4" data-aos="fade-right">
-          <img src={NOUSSOUM} alt="Contact Image" className="w-full h-auto object-cover rounded-lg" />
+          <img src={NOUSSOUM} alt=" Contact " className="w-full h-auto object-cover rounded-lg" />
         </div>
 
         {/* Formulaire à droite */}

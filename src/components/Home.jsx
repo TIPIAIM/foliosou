@@ -14,14 +14,14 @@ export default function Home() {
         {/* Section Texte */}
         <div className="flex flex-col justify-center h-full md:w-1/2 space-y-6 px-4">
          
-          <p className="py-4 text-base mt-28 sm:text-lg md:text-2xl   font-signature text-blue-400 leading-relaxed font-poppins">
+          <p className="py-4 text-base mt-28 sm:text-lg md:text-2xl   font-signature text-green-400 leading-relaxed font-poppins">
             Je m'appelle Diallo Alpha Ousmane, un passionné de technologie.
             originaire de Guinée conakry.
             <br />
             <br />
             La programmation est bien plus qu'un simple domaine d'études pour
             moi, c'est une véritable passion. J'aime particulièrement :
-            <ul className="list-disc pl-6">
+            <ul className="list-disc pl-3">
               <li>Le développement de sites web dynamiques et interactifs.</li>
               <li>La conception et gestion de bases de données efficaces.</li>
               <li>L'utilisation des technoligies de IA ainsi que les maths.</li>
@@ -39,12 +39,12 @@ export default function Home() {
               to="about"
               smooth
               duration={500}
-              className="flex animate-pulse items-center w-fit px-6 py-3 bg-gradient-to-r from-white via-green-500 to-green-900 text-white text-base sm:text-lg font-bold rounded-md shadow-lg hover:scale-105 transition-transform duration-300 cursor-pointer"
+              className="flex animate-pulse items-center w-fit px-3 py-2 bg-gradient-to-r from-white via-green-500 to-green-900 text-white text-base sm:text-lg font-bold rounded-md shadow-lg hover:scale-105 transition-transform duration-300 cursor-pointer"
             >
               En savoir plus
               <TbArrowBigRightLinesFilled
                 size={25}
-                className="ml-2 transform hover:rotate-90 transition-transform duration-300"
+                className=" transform hover:rotate-90 transition-transform duration-300"
               />
             </Link>
           </div>
@@ -59,7 +59,11 @@ export default function Home() {
           />
         </div>
        
-      </div> <Animation2 />
+      </div> 
+      <div>
+        
+      </div>
+      <Animation2 />
     </div>
   );
 }
