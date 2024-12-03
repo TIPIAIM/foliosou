@@ -5,114 +5,115 @@ import {
   FaCogs,
   FaPhoneAlt,
   FaFacebookF,
-  FaTwitter,
   FaLinkedinIn,
-  FaInstagram,
 } from "react-icons/fa"; // Icônes ajoutées
+import { FcCallback } from "react-icons/fc";
+import { MdMail } from "react-icons/md";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-8 p-12 ">
-      <div className="max-w-screen-xl p-6 mx-auto mt-10 ">
-        {/* Conteneur principal */}
-        <div className="flex flex-col md:flex-row justify-between items-center">
+    <footer className="bg-gray-900 mt-20 text-white py-12 px-6">
+      <div className="max-w-screen-xl mx-auto mt-20">
+        {/* Conteneur Principal */}
+        <div className=" mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Section Logo et Description */}
-          <div className="flex flex-col items-center md:items-start mb-6 md:mb-0">
+          <div className="text-center md:text-left">
             <h2 className="text-xl font-extrabold text-green-500 mb-3">
               Technique Info (TIPIAIM)
             </h2>
-            <p className="text-center md:text-left text-gray-400 max-w-xs">
+            <p className="text-gray-400">
               Votre partenaire pour des solutions informatiques de qualité,
               adaptées à vos besoins.
             </p>
           </div>
 
-          {/* Liens utiles */}
-          <div className="flex flex-col items-center md:items-start  mb-6 md:mb-0">
-            <h3 className="text-lg font-semibold  text-3xl font-extrabold text-green-500 mt-3 mb-3">
+          {/* Section Liens Utiles */}
+          <div className="text-center md:text-left">
+            <h3 className="text-lg font-bold text-green-500 mb-3">
               Liens utiles
             </h3>
             <ul className="space-y-3 text-sm">
-              <li className="flex items-center space-x-2">
+              <li className="flex items-center justify-center md:justify-start space-x-2">
                 <FaHome className="text-gray-400 hover:text-green-500 transition" />
-                <a
-                  href="#"
+                <Link
+                  to="home"
                   className="text-gray-400 hover:text-green-500 transition"
                 >
                   Accueil
-                </a>
+                </Link>
               </li>
-              <li className="flex items-center space-x-2">
+              <li className="flex items-center justify-center md:justify-start space-x-2">
                 <FaInfoCircle className="text-gray-400 hover:text-green-500 transition" />
-                <a
-                  href="#"
+                <Link
+                  to="about"
                   className="text-gray-400 hover:text-green-500 transition"
                 >
                   À propos
-                </a>
+                </Link>
               </li>
-              <li className="flex items-center space-x-2">
+              <li className="flex items-center justify-center md:justify-start space-x-2">
                 <FaCogs className="text-gray-400 hover:text-green-500 transition" />
-                <a
-                  href="#"
+                <Link
+                  to="source"
                   className="text-gray-400 hover:text-green-500 transition"
                 >
                   Services
-                </a>
+                </Link>
               </li>
-              <li className="flex items-center space-x-2">
+              <li className="flex items-center justify-center md:justify-start space-x-2">
                 <FaPhoneAlt className="text-gray-400 hover:text-green-500 transition" />
-                <a
-                  href="#"
+                <Link
+                  to="contact"
                   className="text-gray-400 hover:text-green-500 transition"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
 
-          {/* Contact */}
-          <div className="flex flex-col items-center md:items-start">
-            <h3 className="text-lg font-semibold text-3xl font-extrabold text-green-500 mb-3">
+          {/* Section Contact */}
+          <div className="text-center md:text-left">
+            <h3 className="text-lg font-bold text-green-500 mb-3">
               Contactez-nous
             </h3>
-            <p className="text-gray-400 mb-3">Alphaousmaneousmane@gmail.com</p>
-            <p className="text-gray-400">+224 624 138 395</p>
+            <p className="text-gray-400">Alphaousmaneousmane@gmail.com</p>
+            <p className="text-gray-400 mt-2">+224 624 138 395</p>
           </div>
         </div>
 
         {/* Section Réseaux Sociaux */}
-        <div className="flex justify-center items-center mt-6 space-x-6">
+        <div className="flex justify-center space-x-6 mt-8">
           <a
-            href="#"
+            href="https://www.facebook.com/100064773007938/videos/430252586436453/"
             className="text-gray-400 hover:text-green-500 transition transform hover:scale-110"
           >
-            <FaFacebookF className="text-xl" />
+            <FaFacebookF size={20} />
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/alphaousmane-diallo-guinea14?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             className="text-gray-400 hover:text-green-500 transition transform hover:scale-110"
           >
-            <FaTwitter className="text-xl" />
+            <FaLinkedinIn size={20} />
           </a>
           <a
-            href="#"
+            href="https://call.whatsapp.com/voice/6BltD24KmGj7ymIleODD5N"
             className="text-gray-400 hover:text-green-500 transition transform hover:scale-110"
           >
-            <FaLinkedinIn className="text-xl" />
+            <FcCallback size={20} />
           </a>
           <a
-            href="#"
+            href="mailto:alphaousmaneousmane@gmail.com"
             className="text-gray-400 hover:text-green-500 transition transform hover:scale-110"
           >
-            <FaInstagram className="text-xl" />
+            <MdMail size={20} />
           </a>
         </div>
 
-        {/* Copyright */}
+        {/* Section Copyright */}
         <div className="text-center text-gray-400 mt-8">
-          <p>© 2024 Technique Info (tipiaim). Tous droits réservés.</p>
+          <p>© 2024 Technique Info (TIPIAIM). Tous droits réservés.</p>
         </div>
       </div>
     </footer>

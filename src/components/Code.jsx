@@ -28,7 +28,7 @@ export default function Codee() {
       image: linkedine,
       title: "LinkedIn",
       description: "Découvrez mon profil professionnel sur LinkedIn.",
-      link: "https://www.linkedin.com/in/alphaousmane-diallo-5ab82b262",
+      link: "https://www.linkedin.com/in/alphaousmane-diallo-guinea14?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
       id: 3,
@@ -65,9 +65,7 @@ export default function Codee() {
       name="source"
       className="bg-gradient-to- to-green-90 via-green-90 from-blac text-white font-bold min-h-screen p-20"
     >
-      <div className=" mt-6">
-
-      </div>
+      <div className=" mt-6"></div>
       {/* Titre principal */}
       <motion.div
         initial={{ opacity: 0, y: -50 }}
@@ -106,7 +104,9 @@ export default function Codee() {
             <h3 className="text-xl font-semibold mb-2 text-white">
               {/*{source.title}*/}
             </h3>
-            <p className="text-gray-100 text-center mb-4">{source.description}</p>
+            <p className="text-gray-100 text-center mb-4">
+              {source.description}
+            </p>
             <a
               href={source.link}
               target="_blank"

@@ -49,7 +49,7 @@ export default function Home() {
             className="flex items-center"
           >
             <Link
-              to="about"
+              to="source"
               smooth
               duration={500}
               className="flex items-center w-fit px-1 py-1 no-underline bg-gradient-to-r from-green-900 via-teal-500 to-blue-700 text-white text-base sm:text-lg font-bold rounded-md shadow-lg hover:scale-105 transition-transform duration-300 cursor-pointer"

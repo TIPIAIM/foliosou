@@ -3,7 +3,6 @@ import { FaGithubSquare, FaLinkedin, FaPersonBooth } from "react-icons/fa";
 import { MdContactMail } from "react-icons/md";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 
-
 export default function SocialLinks() {
   //pour les quatitre lien gauche
   const links = [
@@ -14,11 +13,9 @@ export default function SocialLinks() {
         <>
           LinkedIn
           <FaLinkedin size={30} />
-          
-
         </>
       ), //on met le lien ou il sera diriger sil clic sur le loglinkdin apre on copie colle 4 fois pour nos besoins
-      href: "https://www.linkedin.com/in/alphaousmane-diallo-5ab82b262",
+      href: "https://www.linkedin.com/in/alphaousmane-diallo-guinea14?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       style: "rounded-tr-md",
     },
     {
@@ -30,7 +27,7 @@ export default function SocialLinks() {
           <FaGithubSquare size={30} />
         </>
       ), //on met le lien ou il sera diriger sil clic sur le loglinkdin apre on copie colle 4 fois pour nos besoins
-      href: "https://github.com/TIPIAIM/sur-moi",
+      href: "https://github.com/TIPIAIM",
     },
     {
       //child es la proprio enfant qui sera un jsx il ya plusieur maniere
@@ -81,15 +78,15 @@ export default function SocialLinks() {
               style
             }
           >
-           <a
-  href={href}
-  className="flex justify-between items-center w-full text-green-900 font-bold hover:text-gray-900 hover:underline transition-all duration-200"
-  download={download}
-  target="_blank"
-  rel="noopener noreferrer"
->
-  {child}
-</a>
+            <a
+              href={href}
+              className="flex justify-between items-center w-full text-green-900 font-bold hover:text-gray-900 hover:underline transition-all duration-200"
+              download={download}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {child}
+            </a>
           </li>
         ))}
       </ul>

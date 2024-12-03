@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div
       name="about"
-      className="min-h-screen w-full bg-gradient-to-b to-gray-900 via-green-800 from-black text-blue-900 font-poppins flex items-center justify-center"
+      className="min-h-screen w-full bg-gradient-to- to-gray-90 via-green-80 from-blac text-blue-900 font-poppins flex items-center justify-center"
     >
       <div className="max-w-screen-lg mx-auto px-6 py-10 flex flex-col items-center justify-center text-center">
         {/* Header Section */}
