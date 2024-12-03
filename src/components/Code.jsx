@@ -63,7 +63,7 @@ export default function Codee() {
   return (
     <div
       name="source"
-      className="bg-gradient-to-b to-green-900 via-green-900 from-black text-white font-bold min-h-screen p-20"
+      className="bg-gradient-to- to-green-90 via-green-90 from-blac text-white font-bold min-h-screen p-20"
     >
       <div className=" mt-6">
 
@@ -76,8 +76,8 @@ export default function Codee() {
         className="text-center mb-12"
       >
         <AiOutlineCodeSandbox size={100} className="mx-auto text-lime-400" />
-        <h1 className="text-4xl font-extrabold text-green-500">
-          Mes Codes & Sources
+        <h1 className="text-5xl font-signature font-extrabold text-green-500">
+          Mes Codes / Sources
         </h1>
         <p className="mt-4 text-gray-300">
           Explorez mes projets et accédez à mes sources pour en savoir plus sur
@@ -111,7 +111,7 @@ export default function Codee() {
               href={source.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-black font-bold hover:underline hover:text-white transition-colors"
+              className="text-green-600 font-bold hover:underline hover:text-green-300 no-underline transition-colors"
             >
               Visiter
             </a>

@@ -29,13 +29,13 @@ export default function Portfolio() {
   return (
     <div
       name="works"
-      className="bg-gradient-to-b from-gray-900 via-green-900 to-black font-bold"
+      className="bg-gradient-to- to-gray-90 via-green-90 from-whi font-bold"
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
         {/* Header */}
         <div className=" text-center">
           
-          <h1 className="text-4xl mb-4 sm:text-5xl font-extrabold text-green-900 text-center">
+          <h1 className="text-4xl font-signature underline mb-4 sm:text-5xl font-extrabold text-green-500 text-center">
            Technologies souvent utilisées
           </h1>
         </div>

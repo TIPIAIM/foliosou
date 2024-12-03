@@ -2,9 +2,9 @@ import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-import NOUSSOUM from "../assets/NOUSSOUM.jpg"; 
-import concourimage from "../assets/concourimage.jpg"; 
-import bachir from "../assets/bachir.jpg"; 
+import NOUSSOUM from "../assets/NOUSSOUM.jpg";
+import concourimage from "../assets/concourimage.jpg";
+import bachir from "../assets/bachir.jpg";
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
@@ -67,64 +67,65 @@ export default function Animation2() {
   }, []);
 
   return (
-    <div className="App min-h-screen bg-gradient-to-b from-white via-white to-green-900 text-green-700 p-4">
-     <div className=" mt-20">
-
-     </div>
-      <h3
-        className="title text-4xl font-extrabold text-center "
-        ref={titleRef}
-      >
-        <span className="letter  ">Observation - </span>
-        <span className="letter text-green-800">Analyse - </span>
-        <span className="letter text-green-900">Execution</span>
-      </h3>
-
-      {/* Boxes avec images */}
-      <div className="flex mb-6 flex-wrap justify-center gap-6">
-        {[
-          {
-            id: "box1",
-            img: NOUSSOUM,
-            text: "Une photo prise le jour de fete des etudiants en 2023",
-          },
-          {
-            id: "box2",
-            img: concourimage,
-            text: "Lors de la competition du concours youdev ' En mode pitch de projet '",
-          },
-          {
-            id: "box3",
-            img: bachir,
-            text: "Le proffessionnel habillement",
-          },
-          {
-            id: "box4",
-            img: NOUSSOUM,
-            text: "La fete de fin d'année a supemir",
-          },
-        ].map(({ id, img, text }) => (
-          <div
-            key={id}
-            id={id}
-            className="w-60 mt-4 h-80 bg-gradient-to-r from-green-500 via-blue-500 to-yellow-500 text-white flex items-center justify-center rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-500 cursor-pointer"
-            onClick={() => handleClick(text)}
+    <div className="App min-h-screen bg-gradient-to-b from-white via-gray-10 to-green-90 text-green-700 p-8 flex items-center justify-center">
+      <div className="text-center w-full max-w-4xl">
+        {/* Titre principal */}
+        <div className="mb-8">
+          <h3
+            className="title text-4xl font-extrabold mb-8"
+            ref={titleRef}
           >
-            <img
-              src={img}
-              alt={text}
-              className="w-full p-1 h-full object-cover rounded-lg shadow-md"
-            />
-          </div>
-        ))}
-      </div>
-
-      {/* Texte affiché au clic */}
-      {clickedText && (
-        <div className="mt-8 text-center text-green-900  text-2xl font-extrabold">
-          {clickedText}
+            <span className="letter text-green-500">Observation - </span>
+            <span className="letter text-green-800">Analyse - </span>
+            <span className="letter text-green-900">Exécution</span>
+          </h3>
         </div>
-      )}
+        {/* Boîtes avec images */}
+        <div className="flex flex-nowrap justify-between gap-4 overflow-auto">
+          {[
+            {
+              id: "box1",
+              img: NOUSSOUM,
+              text: "Une photo prise le jour de la fête des étudiants en 2023",
+            },
+            {
+              id: "box2",
+              img: concourimage,
+              text: "Lors de la compétition du concours Youdev 'En mode pitch de projet'",
+            },
+            {
+              id: "box3",
+              img: bachir,
+              text: "Le professionnel habillement",
+            },
+            {
+              id: "box4",
+              img: NOUSSOUM,
+              text: "La fête de fin d'année à Supemir",
+            },
+          ].map(({ id, img, text }) => (
+            <div
+              key={id}
+              id={id}
+              className="w-60 h-80 bg-gradient-to-r from-green-500 via-blue-500 to-yellow-500 text-white flex items-center justify-center rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-500 cursor-pointer"
+              onClick={() => handleClick(text)}
+            >
+              <img
+                src={img}
+                alt={text}
+                className="w-full p-1 h-full object-cover rounded-lg shadow-md"
+              />
+            </div>
+          ))}
+        </div>
+
+        {/* Texte affiché au clic */}
+        {clickedText && (
+          <div className="mt-8 text-center text-green-900 text-2xl font-extrabold">
+            {clickedText}
+          </div>
+        )}
+      </div>
     </div>
   );
 }

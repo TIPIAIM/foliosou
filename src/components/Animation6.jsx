@@ -1,5 +1,4 @@
 import React from 'react'
-import Ani3 from './Ani3.css';
 import {MdEmojiTransportation } from "react-icons/md"
 
 

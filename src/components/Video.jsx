@@ -88,14 +88,14 @@ export default function Video() {
   };
 
   return (
-    <div className="bg-gradient-to-b  to-gray-900 via-green-900 from-black  min-h-screen p-5">
+    <div className="bg-gradient-to-  to-gray-900 via-green-900 from-black  min-h-screen p-5">
       {/* Titre */}
       <div className="text-center mt-10">
-        <h1 className=" font-extrabold text-4xl text-green-900 font-poppins no-underline">
+        <h1 className=" font-extrabold text-5xl underline font-signature text-green-700 font-poppins ">
           Mes Vidéos de Programmation
         </h1>
-        <p className="mt-4 mb-8 text-gray-400">
-          Sélectionnez une vidéo pour la regarder mes contributions .
+        <p className="mt-3 mb-20 text-gray-200">
+          Sélectionnez une vidéo pour la regarder quelquess une des mes contributions .
         </p>
       </div>
 
@@ -106,7 +106,7 @@ export default function Video() {
           name="video"
           className="w-full md:w-1/3 'bg-gradient-to-b bg rounded-lg shadow-md max-h-[80vh] overflow-y-auto"
         >
-          <h2 className="text-3xl text-center bg-gradient-to-b to-gray-900 via-green-500 font-signature from-black font-semibold text-white border-b border-yellow-500 pb- mb-3">
+          <h2 className="text-3xl text-center bg-gradient-to-b to-gray-900 via-green-900 font-signature from-black font-semibold text-white border-b border-yellow-500 pb- mb-3">
             Liste de quelques Vidéos
           </h2>
           <ul className="space-y-2">

@@ -8,12 +8,12 @@ const About = () => {
   return (
     <div
       name="about"
-      className="min-h-screen w-full bg-gradient-to-b to-gray-900 via-green-800 from-black text-blue-900 font-poppins"
+      className="min-h-screen w-full bg-gradient-to- to-gray-90 via-green-80 from-blac text-blue-900 font-poppins"
     >
       <div className="max-w-screen-lg mx-auto px-6 py-10">
         {/* Header Section */}
-        <div className="mb-14 mt-14">
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-green-900 text-center">
+        <div className="mb-1 mt-2">
+          <h1 className="text-5xl underline sm:text-5xl font-signature font-extrabold text-green-600 text-center">
             À Propos de Moi (Un peu)
           </h1>
         </div>
@@ -31,7 +31,7 @@ const About = () => {
 
           {/* Text Section */}
           <div className="space-y-8 md:w-2/3">
-            <p className="typing-animation bg-gradient-to-b mt- from-gray-900 via-green-900 to-black font-signature text-white text-lg sm:text-2xl leading-relaxed bg-white bg-opacity-80 rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:scale-105">
+            <p className=" bg-gradient-to- font-bold from-gray-90 via-green-90 to-blac font-signatur text-white  sm:text-xl leading-relaxed  bg-opacity-80 rounded-lg shadow-lg p-2 transform transition-all duration-300 hover:scale-105">
               Après avoir obtenu mon diplôme de bac +3 en licence MIAGE à
               l'université de Labé (Guinée Conakry) de 2017 à 2020, puis en 2022,
               j'ai continué ma formation en obtenant une licence professionnelle

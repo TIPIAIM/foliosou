@@ -49,7 +49,8 @@ export default function Contact() {
   }, []);
 
   return (
-    <div name="contact" className='bg-gradient-to-b from-gray-900 via-green-900 to-black p-4 w-full h-screen'>
+    <div name="contact" className='bg-gradient-to- from-gray-900 via-green-900 to-black p-4 w-full h-screen'>
+    
       <div className='flex justify-center items-center max-w-screen-lg mx-auto h-full'>
         {/* Image à gauche */}
         <div className="hidden md:block w-1/2 p-4" data-aos="fade-right">
@@ -58,8 +59,10 @@ export default function Contact() {
 
         {/* Formulaire à droite */}
         <div className="flex flex-col w-full md:w-1/2 p-4 justify-center">
+        
+        
           <div className="pb-8 text-center py-4">
-            <p className='flex col-span-2 mt-2 text-5xl text-white font-bold underline'>
+            <p className='flex col-span-2 mt-2  text-5xl text-green-700 font-extralight font-signature underline'>
               Contact <FcVoicePresentation />
             </p>
             <p className='py-3 text-white font-bold'>
