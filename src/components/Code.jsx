@@ -75,7 +75,7 @@ export default function Codee() {
         transition={{ duration: 0.8 }}
         className="text-center mb-12"
       >
-        <AiOutlineCodeSandbox size={100} className="mx-auto text-lime-400" />
+        <AiOutlineCodeSandbox size={50} className="mx-auto text-lime-400" />
         <h1 className="text-5xl font-signature font-extrabold text-green-500">
           Mes Codes / Sources
         </h1>

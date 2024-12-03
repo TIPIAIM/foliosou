@@ -151,7 +151,7 @@ export default function Experience() {
           {techs.map(({ id, src, title, style, description }) => (
             <motion.div
               key={id}
-              className={`flex flex-col items-center justify-center p-2 bg-gradient-to-b to-gray-900 via-green-500 from-black rounded-lg shadow-lg cursor-pointer transform transition hover:scale-110 ${style}`}
+              className={`flex flex-col items-center justify-center p-2 bg-gradient-to-t to-green-400  via-gray-900 from-black rounded-lg shadow-lg cursor-pointer transform transition hover:scale-110 ${style}`}
               onClick={() => setSelectedTech({ title, description })}
               whileHover={{ scale: 1.1 }}
             >
@@ -175,13 +175,13 @@ export default function Experience() {
               exit="exit"
               variants={modalVariants}
             >
-              <div className=" bg-gradient-to-b to-green-500 via-gray-100 from-green-500 rounded-lg p-6 max-w-lg w-full">
+              <div className=" bg-gradient-to-b to-green-00 via-gray-100 from-green-50 rounded-lg p-6 max-w-lg w-full">
                 <h2 className=" font-bold font-signature text-3xl text-gray-900">
                   {selectedTech.title}
                 </h2>
                 <p className="mt-4 text-gray-600">{selectedTech.description}</p>
                 <button
-                  className="mt-6 px-4 py-2 bg-red-900 text-white rounded-lg hover:bg-red-600"
+                  className="mt-6 px-4 py-2 bg-blue-900 text-white rounded-lg hover:bg-green-600"
                   onClick={() => setSelectedTech(null)}
                 >
                   Fermer
@@ -189,13 +189,10 @@ export default function Experience() {
               </div>
             </motion.div>
           )}
-        
         </AnimatePresence>
-          <Experiencee/>
-         {/* <ExperienceGraph/>*/}
+        <Experiencee />
+        {/* <ExperienceGraph/>*/}
       </div>
     </div>
   );
 }
-
-  

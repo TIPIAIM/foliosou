@@ -22,7 +22,7 @@ export default function Home() {
           transition={{ duration: 0.6 }}
           className="flex flex-col justify-center h-full md:w-1/2 "
         >
-          <p className="py-4 text-base mt-2 sm:text-lg md:text-xl  text-green-100 font-bold leading-relaxed font-poppins">
+          <p className="py-4 text-base sm:text-lg md:text-xl  text-green-100 font-bold leading-relaxed font-poppins">
          
             La programmation est bien plus qu'un simple domaine d'études pour
             moi, c'est une véritable passion.
@@ -52,9 +52,9 @@ export default function Home() {
               to="about"
               smooth
               duration={500}
-              className="flex items-center w-fit px-3 py-2 bg-gradient-to-r from-green-500 via-teal-500 to-blue-700 text-white text-base sm:text-lg font-bold rounded-md shadow-lg hover:scale-105 transition-transform duration-300 cursor-pointer"
+              className="flex items-center w-fit px-1 py-1 no-underline bg-gradient-to-r from-green-900 via-teal-500 to-blue-700 text-white text-base sm:text-lg font-bold rounded-md shadow-lg hover:scale-105 transition-transform duration-300 cursor-pointer"
             >
-              En savoir plus
+              En savoir +
               <TbArrowBigRightLinesFilled
                 size={25}
                 className="ml-2 transform hover:rotate-90 transition-transform duration-300"

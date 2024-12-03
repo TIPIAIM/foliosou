@@ -57,7 +57,7 @@ export default function Animation2() {
       to: { opacity: 1, y: 0 },
     });
     animateElement("#box3", {
-      from: { opacity: 0, y: -400 },
+      from: { opacity: 0, y: 400 },
       to: { opacity: 1, y: 0 },
     });
     animateElement("#box4", {
@@ -67,10 +67,10 @@ export default function Animation2() {
   }, []);
 
   return (
-    <div className="App min-h-screen bg-gradient-to-b from-white via-gray-10 to-green-90 text-green-700 p-8 flex items-center justify-center">
+    <div className="App min-h-screen bg-gradient-to-b from-white via-gray-100 to-green-100 text-green-700 p-8 flex items-center justify-center">
       <div className="text-center w-full max-w-4xl">
         {/* Titre principal */}
-        <div className="mb-8">
+        <div className="mt-10">
           <h3
             className="title text-4xl font-extrabold mb-8"
             ref={titleRef}
@@ -91,7 +91,7 @@ export default function Animation2() {
             {
               id: "box2",
               img: concourimage,
-              text: "Lors de la compétition du concours Youdev 'En mode pitch de projet'",
+              text: "Lors de la compétition du concours Youdev 'En mode pitch de projet' ",
             },
             {
               id: "box3",
@@ -101,7 +101,7 @@ export default function Animation2() {
             {
               id: "box4",
               img: NOUSSOUM,
-              text: "La fête de fin d'année à Supemir",
+              text: "La fête de fin d'année à SUPEMIR en 2023 - 2024",
             },
           ].map(({ id, img, text }) => (
             <div
@@ -121,7 +121,7 @@ export default function Animation2() {
 
         {/* Texte affiché au clic */}
         {clickedText && (
-          <div className="mt-8 text-center text-green-900 text-2xl font-extrabold">
+          <div className="mt-8 bg-gray-900 rounded-lg text-center text-green-100 text-xl font-extrabold">
             {clickedText}
           </div>
         )}
