@@ -24,7 +24,7 @@ export default function NavBar() {
         <h1 className="text-3xl font-extrabold tracking-wide text-white hover:scale-105 transition-transform duration-200">
           Alpha Ousmane
         </h1>
-        <GiBurningPassion size={40} className="text-green-500 ml-3 animate-pulse" />
+        <GiBurningPassion size={40} className="text-green-200 ml- animate-pulse" />
       </div>
 
       {/* Desktop Links */}
