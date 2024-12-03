@@ -1,0 +1,32 @@
+/* Animation de type machine à écrire pour faire apparaître le texte caractère par caractère */
+@keyframes typing {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  .typing-animation {
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap; /* Évite que le texte s'enroule sur plusieurs lignes */
+    overflow: hidden; /* Cache tout le texte qui n'est pas encore visible */
+    border-right: 3px solid #ffffff; /* Curseur de la machine à écrire */
+    animation: typing 6s steps(60) 1s 1 normal both, blink 0.75s step-end infinite;
+    white-space: normal; /* Pour que le texte s'enroule sur plusieurs lignes */
+    word-wrap: break-word; /* Permet aux mots longs de se couper s'ils dépassent */
+  }
+  
+  /* Animation de clignotement du curseur */
+  @keyframes blink {
+    0%,
+    100% {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #ffffff;
+    }
+  }
+  

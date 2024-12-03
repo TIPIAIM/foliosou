@@ -67,8 +67,10 @@ export default function Animation2() {
   }, []);
 
   return (
-    <div className="App min-h-screen bg-gradient-to-b from-green-900 va-green-900 to-black text-green-700 p-4">
-     
+    <div className="App min-h-screen bg-gradient-to-b from-white via-white to-green-900 text-green-700 p-4">
+     <div className=" mt-20">
+
+     </div>
       <h3
         className="title text-4xl font-extrabold text-center "
         ref={titleRef}
@@ -119,7 +121,7 @@ export default function Animation2() {
 
       {/* Texte affiché au clic */}
       {clickedText && (
-        <div className="mt-8 text-center text-green-600 font-bold text-xl">
+        <div className="mt-8 text-center text-green-900  text-2xl font-extrabold">
           {clickedText}
         </div>
       )}

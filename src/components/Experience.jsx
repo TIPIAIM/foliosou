@@ -15,6 +15,7 @@ import oracle from "../assets/oracle.jpg";
 
 import { GiSaberToothedCatHead } from "react-icons/gi";
 import Experiencee from "./Experiencess";
+import ExperienceGraph from "./ExperienceGraph";
 
 export default function Experience() {
   const [selectedTech, setSelectedTech] = useState(null);
@@ -128,9 +129,9 @@ export default function Experience() {
       name="experience"
       className="bg-gradient-to-b to-gray-900 via-green-500 from-black text-gray-300 w-full min-h-screen py-8"
     >
-      <div className="max-w-screen-lg mb-24 mx-auto flex flex-col justify-center items-center w-full h-full">
+      <div className="max-w-screen-lg mb-20 mx-auto flex flex-col justify-center items-center w-full h-full">
         <div className="mb-10">
-          <p className="text-4xl font-extrabold text-center text-white">
+          <p className="text-4xl font-extrabold text-center text-green-900">
             Mes Compétences Techniques
             <GiSaberToothedCatHead className="inline-block ml-2 text-amber-500" />
           </p>
@@ -190,7 +191,9 @@ export default function Experience() {
             </motion.div>
           )}
         
-        </AnimatePresence>  <Experiencee/>
+        </AnimatePresence>
+          <Experiencee/>
+         {/* <ExperienceGraph/>*/}
       </div>
     </div>
   );

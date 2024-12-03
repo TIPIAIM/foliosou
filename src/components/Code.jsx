@@ -63,9 +63,9 @@ export default function Codee() {
   return (
     <div
       name="source"
-      className="bg-gradient-to-b from-gray-900 via-green-900 to-black text-white font-bold min-h-screen p-8"
+      className="bg-gradient-to-b to-green-900 via-green-900 from-black text-white font-bold min-h-screen p-20"
     >
-      <div className=" mt-10">
+      <div className=" mt-6">
 
       </div>
       {/* Titre principal */}
@@ -86,13 +86,13 @@ export default function Codee() {
       </motion.div>
 
       {/* Tableau d'images avec titres, descriptions et liens */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
         {sources.map((source) => (
           <motion.div
             key={source.id}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-gradient-to-tr from-green-80 via-green-60 to-lime-400 p-6 rounded-xl shadow-lg flex flex-col items-center transition-transform"
+            className="bg-gradient-to-tr from-green-80 via-green-60 to-lime-400 p-2 rounded-xl shadow-lg flex flex-col items-center transition-transform"
             data-aos="fade-up"
           >
             <motion.img

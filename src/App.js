@@ -12,6 +12,7 @@ import Portfolio from "./components/Portfolio";
 import SocialLinks from "./components/SocialLinks";
 import Video from "./components/Video";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Footer from "./components/Piedpage";
 
 function App() {
   useEffect(() => {
@@ -32,13 +33,14 @@ function App() {
       >
         <Home />
       </motion.div>
+      <Codee data-aos="fade-down" />
       <About data-aos="fade-up" />
       <SocialLinks data-aos="fade-right" />
       <Portfolio data-aos="zoom-in" />
       <Experience data-aos="fade-left" />
       <Contact data-aos="slide-up" />
       <Video data-aos="flip-up" />
-      <Codee data-aos="fade-down" />
+      <Footer data-aos="flip-up" />
     </div>
   );
 }

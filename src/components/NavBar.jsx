@@ -9,12 +9,13 @@ export default function NavBar() {
 
   const links = [
     { id: 1, link: "home" },
-    { id: 2, link: "about" },
-    { id: 3, link: "works" },
-    { id: 4, link: "experience" },
-    { id: 5, link: "contact" },
-    { id: 6, link: "video" },
-    { id: 7, link: "source" },
+     { id: 2, link: "source" },
+    { id: 3, link: "about" },
+    { id: 4, link: "works" },
+    { id: 5, link: "experience" },
+    { id: 6, link: "contact" },
+    { id: 7, link: "video" },
+   
   ];
 
   return (

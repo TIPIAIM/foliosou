@@ -10,7 +10,6 @@ import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
 import images from "../assets/portfolio/images.jpg";
 import { GoDeviceCameraVideo } from "react-icons/go";
 import { RiCodeBoxFill } from "react-icons/ri";
-import {  GiPianist } from "react-icons/gi";
 import { Link } from "react-scroll";
 
 export default function Portfolio() {
@@ -32,14 +31,11 @@ export default function Portfolio() {
       name="works"
       className="bg-gradient-to-b from-gray-900 via-green-900 to-black font-bold"
     >
-      <div className="max-w-screen-lg mx-auto p-6 flex flex-col justify-center w-full h-full">
+      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
         {/* Header */}
-        <div className="pb-4 text-center">
-          <p className="flex justify-center mt text-4xl font-bold text-green-900 mb-2">
-           { /*<GiAnimalHide className="mx-2" />*/}
-            <GiPianist size={60} />
-          </p>
-          <h1 className="text-4xl mb-6 sm:text-5xl font-extrabold text-green-900 text-center">
+        <div className=" text-center">
+          
+          <h1 className="text-4xl mb-4 sm:text-5xl font-extrabold text-green-900 text-center">
            Technologies souvent utilisées
           </h1>
         </div>
@@ -89,7 +85,7 @@ export default function Portfolio() {
         </div>
 
         {/* Portfolio Grid */}
-        <div className="mt-8 mb-32 grid gap-8 sm:grid-cols-2 md:grid-cols-3 px-4">
+        <div className="mt-8 mb-10 grid gap-8 sm:grid-cols-2 md:grid-cols-3 px-4">
           {portfolios.map(({ id, src }) => (
             <div
               key={id}

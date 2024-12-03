@@ -60,7 +60,7 @@ function Experiencee() {
       <div className="max-w-screen-lg mb-2 mx-auto flex flex-col justify-center items-center w-full h-full">
         {/* Titre */}
         <div className="mb-10 mt-6">
-          <p className="text-4xl rounded-xl font-extrabold text-center text-white">
+          <p className="text-4xl mt-20  rounded-xl font-extrabold text-center text-green-900">
             Mes Expériences Professionnelles
             <GiSaberToothedCatHead className="inline-block ml-2 text-amber-500" />
           </p>
@@ -99,7 +99,7 @@ function ExperienceCard({ experience }) {
 
   return (
     <motion.li
-      className="bg-gradient-to-r from-green-500 to-gray-900 p-6 rounded-lg shadow-lg transition-transform"
+      className="bg-gradient-to-r from-green-900 to-gray-90 p-6 rounded-lg shadow-lg transition-transform"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       initial="rest"
