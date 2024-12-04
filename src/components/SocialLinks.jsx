@@ -1,5 +1,10 @@
 import React from "react";
-import { FaGithubSquare, FaLinkedin, FaPersonBooth } from "react-icons/fa";
+import {
+  FaFileDownload,
+  FaGithubSquare,
+  FaLinkedin,
+  FaPersonBooth,
+} from "react-icons/fa";
 import { MdContactMail } from "react-icons/md";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 
@@ -58,7 +63,7 @@ export default function SocialLinks() {
       child: (
         <>
           ResumeCV
-          <FaPersonBooth size={30} />
+          <FaFileDownload size={30} />
         </>
       ), //on met le lien ou il sera diriger sil clic sur le loglinkdin apre on copie colle 4 fois pour nos besoins
       href: "/alphaousmane23.pdf",
@@ -67,20 +72,20 @@ export default function SocialLinks() {
     },
   ];
   return (
-    <div className=" hidden lg:flex flex-col top-[35%] left-0 fixed">
+    <div className=" hidden lg:flex flex-col top-[15%] left-0 fixed">
       <ul>
         {links.map(({ id, child, href, style, download }) => (
           <li
             key={id}
             className={
-              "flex bg-gradient-to-b to-gray-800 via-green-400 from-black  justify-between items-center w-40 h-14 px-3 ml-[-130px] hover:ml-[-10px] hover:rounded-md duration-300 " +
+              "flex bg-gradient-to- to-gray-900 via-green-300 from-black  justify-between items-center w-40 h-12 px-1 ml-[-145px] hover:ml-[-130px] hover:rounded-md duration-300 " +
               " " +
               style
             }
           >
             <a
               href={href}
-              className="flex justify-between items-center w-full text-green-900 font-bold hover:text-gray-900 hover:underline transition-all duration-200"
+              className="flex justify-between items-center w-full text-green-900 font-bold hover:text-blue-900 hover:underline transition-all duration-200"
               download={download}
               target="_blank"
               rel="noopener noreferrer"
