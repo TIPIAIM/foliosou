@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import NOUSSOUM from "../assets/NOUSSOUM.jpg";
 import concourimage from "../assets/concourimage.jpg";
-import bachir from "../assets/bachir.jpg";
+import bachir from "../assets/marietou.jpg";
 import grandfrere from "../assets/grandfrere.jpg";
 import licenceMiage from "../assets/licenceMiage.jpg";
 import granfrere2 from "../assets/granfrere2.jpg";
@@ -95,7 +95,7 @@ export default function Animation2() {
           {boxes.map(({ id, img, text }) => (
             <div key={id} className="relative box">
               <div
-                className="w-full h-96 bg-gradient-to-r from-green-500 via-blue-500 to-yellow-500 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-500 cursor-pointer"
+                className="w-34 h-34 bg-gradient-to-r from-green-500 via-blue-500 to-yellow-500 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-500 cursor-pointer"
                 onClick={() => handleClick(id)}
               >
                 <img
